@@ -226,7 +226,11 @@ class DocManager(DocManagerBase):
     def _index_and_mapping(self, namespace):
         """Helper method for getting the index and type from a namespace."""
         index, doc_type = namespace.split(".", 1)
-        return index.lower(), doc_type
+
+        #return index.lower(), doc_type
+        # FIX: issue when connecting to ES6.x or ES7.x, use mongodb <database>_<table_name> as ES index name - by TK
+        return index.lower() + '_' + doc_type, 'col_02'
+     
 
     def stop(self):
         """Stop the auto-commit thread."""
