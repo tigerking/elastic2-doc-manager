@@ -1,3 +1,7 @@
+A quick fix for ES（Elasticsearch）6.x, 7.x 
+-- by TK, 2019.8.1
+
+
 ====================
 elastic2-doc-manager
 ====================
