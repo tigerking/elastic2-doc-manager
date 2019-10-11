@@ -1,4 +1,5 @@
 A quick fix for ES（Elasticsearch）6.x, 7.x 
+(issue https://github.com/yougov/elastic2-doc-manager/issues/60 )
 -- by TK, 2019.8.1
 
 
